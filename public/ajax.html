@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
+    <!--<script src="routes/index.js"></script>-->
+</head>
+<body>
+<!--<div id="show" class="show">-->
+    <!--<h1></h1>-->
+    <!--<p></p>-->
+<!--</div>-->
+<!--<div class="col"><input id="h1" type="text"/>-->
+    <!--<input id="p" type="text"/>-->
+    <!--<button id="btn">add</button></div>-->
+<table border="2" cellpadding="10" style="text-align: center">
+
+</table>
+<script>
+    $(function(){
+
+        $.ajax({
+            url:'http://localhost:3000/',
+            type:'GET',
+            data:{},
+            success:function(e){
+
+                var s=''
+                for(var i in e){
+                    s+="<tr><td>"+e[i].id+"</td><td>"+e[i].name+"</td><td>"+e[i].age+"</td></tr>"
+                }
+             $('table').append(s)
+
+
+            }
+        })
+    })
+</script>
+</body>
+</html>

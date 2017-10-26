@@ -10,3 +10,16 @@ p{
   font-weight: bold;color: aqua;font-size: 18px;
 }
 span{color: red}
+.show{width: 560px;height: 360px;border: 2px outset darkgrey;margin: 0 auto;padding: 20px;
+overflow: hidden;
+
+
+}
+.col{width: 600px;height: 40px; padding: 20px 0px;
+  background-color: aquamarine;margin: 0 auto}
+#h1{width: 200px;height: 40px;float: left;margin-left: 5px;}
+#p{width: 200px;height: 40px;float: left;margin-left: 35px;}
+#btn{width: 100px;height: 40px;border: 1px solid white;margin-left: 30px;
+color: #2c51ff;font-size: 20px;font-weight: bold;
+
+}
